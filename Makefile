@@ -1,4 +1,5 @@
-CC=gcc
+TOOLCHAIN=C:\cygwin64\bin
+CC=$(TOOLCHAIN)gcc
 BIN=HelloWorld
 SRC=CI_HelloWorld.c
 CFLAGS+= -I./include
