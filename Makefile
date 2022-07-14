@@ -9,10 +9,10 @@ OBJS := $(SRC:.c=.o)
 all: $(BIN) install 
 
 $(OBJS): %.o: %.c
-	$(CC) -c $(CFLAGS) $< -o $@
+	C:\cygwin64\bin\ -c $(CFLAGS) $< -o $@
 
 $(BIN): $(OBJS) 
-	$(CC) $^ $(LIBFLAGS) -o $@ 
+	C:\cygwin64\bin\ $^ $(LIBFLAGS) -o $@ 
 
 clean: uninstall
 	@rm -f $(BIN) *.o 
